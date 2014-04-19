@@ -1,0 +1,103 @@
+All macroscopic cross sections in cm^-1
+Fuel Material, Group 1
+sigma absorption
+8.5271E-03
+nusigmaf
+9.0932E-03
+sigma total
+2.2378E-01
+in group scatter cross section (1-->1)
+1.9242E-01
+Chi
+1.00
+Fuel Material, Group 2
+sigma absorption
+1.5820E-01
+nusigmaf
+2.9018E-01
+sigma total
+1.0386E+00
+In group scatter cross section (2-->2)
+8.8044E-01
+Scatter cross section into group 2 (1-->2)
+2.2825E-02
+chi
+0.00
+Abar value for Fuel Material
+10.1
+Reflector, Group 1
+Sigma absorption
+4.1639E-04
+nusigmaf
+0.0000
+sigma total
+2.5037E-01
+In group scatter cross section (1-->1)
+1.9345E-01
+chi
+0.00
+Reflector, Group 2
+Sigma absorption
+2.0300E-02
+nusigmaf
+0.0000
+sigma total
+1.6448E+00
+In group scatter cross section (2-->2)
+1.6245E+00
+Downscatter into group 2 cross section (1-->2)
+5.6504E-02
+chi
+0.00
+Abar value for Reflector
+6.0
+Void, Group 1
+sigma absorption
+4.6513E-05
+nusigmaf
+0.0000
+sigma total
+1.2841E-02
+In group scatter cross section (1-->1)
+1.2770E-02
+chi
+0.00
+Void, Group 2
+sigma absorption
+1.3289E-03
+nusigmaf
+0.0000
+sigma total
+1.2068E-02
+In group scatter cross section (2-->2)
+1.0739E-02
+Downscatter cross section into group 2 (1-->2)
+2.4100E-05
+chi
+0.00
+Abar value for Void
+1.0
+albedo factor on the left
+1.0
+albedo factor on the right
+0.0
+albedo factor on the top
+0.0
+albedo factor on the bottom
+1.0
+albedo factor on the upper
+0.0
+albedo factor on the lower
+1.0
+length of the reactor in the x direction (cm)
+25.00
+length of the reactor in the y direction (cm)
+25.00
+length of the reactor in the z direction (cm)
+25.00
+nubar for the fast group in the fuel
+3.8137
+nubar for the thermal group in the fuel
+2.5485
+Beta for the reactor
+0.0055
