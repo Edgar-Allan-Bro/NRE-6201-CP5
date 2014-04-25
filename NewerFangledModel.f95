@@ -16,6 +16,8 @@ itergs = 0
 ! Read in values from the input file
 OPEN(1,FILE='input.dta')
 OPEN(2,FILE='output.dta')
+OPEN(3,FILE='flux1.dta')
+OPEN(4,FILE='flux2.dta')
 READ(1,'(A)') dummy
 READ(1,'(A)') dummy
 READ(1,'(A)') dummy
@@ -117,8 +119,6 @@ READ(1,'(A)') dummy
 READ(1,*) rnubar(1)
 READ(1,'(A)') dummy
 READ(1,*) rnubar(2)
-READ(1,'(A)') dummy
-READ(1,*) beta
 rmubar(1) = 2.0/(3.0*Abar(1))
 rmubar(2) = 2.0/(3.0*Abar(2))
 rmubar(3) = 2.0/(3.0*Abar(3))
@@ -337,13 +337,20 @@ DO i = 1,M
 END DO
 write (*,*) 'number of fuel nodes =', counter
 PApower = maxval(Power)/(totpower/counter)
-!DO i = 1,M
-!	write(2,*) flux(i,:,1)
-!END DO
-!write(2,*) ''
-!DO i = 1,M
-!	write(2,*) flux(i,:,2)
-!END DO
+DO k = 1,M
+	DO j = 1,M
+		DO i = 1,M
+			write(3,*) flux(i,j,k,1)
+		END DO
+	END DO
+END DO
+DO k = 1,M
+	DO j = 1,M
+		DO i = 1,M
+			write(4,*) flux(i,j,k,2)
+		END DO
+	END DO
+END DO
 WRITE(*,*) ''
 WRITE(*,*) 'keff is', rkeff
 WRITE(*,*) ''
@@ -366,4 +373,6 @@ WRITE(2,*) ''
 WRITE(2,*) 'Peak to Average Power =', PApower
 close(1)
 close(2)
+close(3)
+close(4)
 END PROGRAM Model
