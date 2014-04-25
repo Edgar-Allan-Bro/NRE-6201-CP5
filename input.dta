@@ -96,8 +96,6 @@ length of the reactor in the y direction (cm)
 length of the reactor in the z direction (cm)
 25.00
 nubar for the fast group in the fuel
-3.8137
+2.50
 nubar for the thermal group in the fuel
-2.5485
-Beta for the reactor
-0.0055
+2.43
